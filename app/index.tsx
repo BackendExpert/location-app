@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, ImageBackground } from "react-native";
+import { Text, View, StyleSheet, ImageBackground, Image } from "react-native";
 
 export default function Index() {
     const bgImg = require("../assets/images/UOPWelcome.jpg");
@@ -14,6 +14,10 @@ export default function Index() {
         <View style={styles.overlay}>
           <View style={styles.headerWelcome}>
           <Text style={styles.headerText}>Welcome to</Text>
+          </View>
+
+          <View style={styles.bodyWelcome}> 
+            <Text style={styles.bodyText}>Hi all</Text>
           </View>
 
         </View>
@@ -48,5 +52,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
     fontSize: 20
+  },
+  bodyWelcome: {
+    marginVertical: 40
+  },
+  bodyText: {
+    color: 'white'
   }
 })
