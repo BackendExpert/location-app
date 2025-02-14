@@ -3,7 +3,9 @@ import { Text, View, StyleSheet, ImageBackground, Image, TouchableOpacity } from
 export default function DashbaordScreen(){
     return (
         <View style={styles.container}>
-            <Text>Hi all</Text>
+            <View style={styles.searchbar}>
+
+            </View>
         </View>
     )
 }
